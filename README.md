@@ -32,7 +32,7 @@ Example:
 
 We also provided a testing scene with height field as input. With the provided script, the scene could be rendered directly.
 
-The XML can be found [here](scenes/xml/doubleSlabOursReflect.xml), an input normal map can be found [here](scenes/xml/heightfield/isotropic512.exr) and a binary (Windows) can be found [here](scenes/Release). 
+The XML can be found [here](scene/xml/doubleSlabOursReflect.xml), an input normal map can be found [here](scene/xml/heightfield/isotropic512.exr) and a binary (Windows) can be found [here](scene/Release). 
 
 The command is also shown here:
 
