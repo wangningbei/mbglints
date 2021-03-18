@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<scene version="0.5.0">
+	<integrator type="path">
+		<integer name="maxDepth" value="3"/>
+	</integrator>
+<!--
+	<emitter type="envmap">
+		<string name="filename" value="C:\research\2019project\multi-bounceGlint\scenes\music_hall_02_blurred.jpg"/>
+		<transform name="toWorld">
+			<rotate x="1" angle="0"/>
+			<rotate z="1" angle="180"/>
+			<rotate y="1" angle="90"/>
+		</transform>
+		<float name="scale" value="1.0"/>
+	</emitter>-->
+
+	<sensor type="perspective">
+		<float name="focusDistance" value="7.68721"/>
+		<float name="fov" value="45"/>
+		<string name="fovAxis" value="x"/>
+		<float name="nearClip" value="0.1"/>
+		<transform name="toWorld">
+
+			<lookat target="2.38419e-06, 2.38419e-06, 6.63721" origin="2.38419e-06, 2.38419e-06, 7.63721" up="0, -1, 0"/>
+		</transform>
+
+		<sampler type="ldsampler">
+			<integer name="sampleCount" value="512"/>
+		</sampler>
+
+		<film type="hdrfilm">
+			<integer name="height" value="2048"/>
+			<integer name="width" value="2048"/>
+			<boolean name="banner" value="false"/>
+			<rfilter type="tent"/>
+		</film>
+	</sensor>
+	<!---->
+	<emitter type="point">
+		<transform name="toWorld">
+			<translate x="0" y="0" z="-10"/>
+		</transform>
+		
+		<spectrum name="intensity" value="3.14"/>
+	</emitter>  
+	<!--	<shape type="sphere">
+		<point name="center" x="0" y="0" z="-10"/>
+		<float name="radius" value="0.1"/>
+
+		<emitter type="area">
+			<rgb name="radiance" value="100000, 100000, 100000"/>
+		</emitter>
+	</shape>-->
+
+	<bsdf type="dielectric" id="glass">
+		<float name="intIOR" value="1.504"/>
+		<float name="extIOR" value="1.0"/>
+		<float name="alpha" value="0.01"/>
+	</bsdf>
+	<!--		<medium name="interior" type="homogeneous">
+			<spectrum name="sigmaA" value="2 1.5 0.0"/>
+		</medium>-->
+	<!---->
+	
+	<shape type="ply">
+		<string name="filename" value="mesh/planar.ply"/>
+		<ref id="glass"/>
+	</shape>
+
+	<shape type="ply">
+		<transform name="toWorld">
+			<translate x="0" y="0" z="-1"/>
+			<scale x="1.1" y="1.1" z="1"/> 
+		</transform>
+		<string name="filename" value="mesh/planarDown.ply"/>
+		<ref id="glass"/>
+	</shape> 
+<!--
+	<shape type="ply">
+		<transform name="toWorld">
+			<translate x="0" y="0" z="-2"/>
+			<scale x="1.2" y="1.2" z="1"/> 
+		</transform>
+		<string name="filename" value="mesh/planar.ply"/>
+		<ref id="glass"/>
+	</shape>
+
+	<shape type="ply">
+		<transform name="toWorld">
+			<translate x="0" y="0" z="-3"/>
+			<scale x="1.3" y="1.3" z="1"/> 
+		</transform>
+		<string name="filename" value="mesh/planarDown.ply"/>
+		<ref id="glass"/>
+	</shape> 
+ 	
+	<shape type="ply">
+		<string name="filename" value="outputMesh0.ply"/>
+
+		<ref id="glass"/>
+	</shape>
+
+	<shape type="ply">
+		<string name="filename" value="outputMesh1.ply"/>
+
+		<ref id="glass"/>
+	</shape>-->
+</scene>

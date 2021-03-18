@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<scene version="0.5.0">
+	<integrator type="path">
+		<integer name="maxDepth" value="2"/>
+	</integrator>
+<!--
+	<emitter type="envmap">
+		<string name="filename" value="C:\research\2019project\multi-bounceGlint\scenes\music_hall_02_blurred.jpg"/>
+		<transform name="toWorld">
+			<rotate x="1" angle="0"/>
+			<rotate z="1" angle="180"/>
+			<rotate y="1" angle="90"/>
+		</transform>
+		<float name="scale" value="1.0"/>
+	</emitter>-->
+
+	<sensor type="perspective">
+		<float name="fov" value="45"/>
+		<string name="fovAxis" value="x"/>
+		<float name="nearClip" value="0.1"/>
+		<transform name="toWorld">
+
+			<lookat target="0, 0, 9" origin="0, 0, 10" up="0, -1, 0"/>
+		</transform>
+
+		<sampler type="ldsampler">
+			<integer name="sampleCount" value="512"/>
+		</sampler>
+
+		<film type="hdrfilm">
+			<integer name="height" value="1080"/>
+			<integer name="width" value="1920"/>
+			<rfilter type="tent"/>
+		</film>
+	</sensor>
+	<!---->
+	<emitter type="point">
+		<transform name="toWorld">
+			<translate x="0" y="0" z="10"/>
+		</transform>
+		
+		<spectrum name="intensity" value="314"/>
+	</emitter>  
+	<!--	<shape type="sphere">
+		<point name="center" x="0" y="0" z="-10"/>
+		<float name="radius" value="0.1"/>
+
+		<emitter type="area">
+			<rgb name="radiance" value="100000, 100000, 100000"/>
+		</emitter>
+	</shape>-->
+
+	<bsdf type="conductor" id="metal">
+		<string name="material" value="al"/>
+		<float name="alpha" value="0.1"/>
+	</bsdf>
+
+	<!--		<medium name="interior" type="homogeneous">
+			<spectrum name="sigmaA" value="2 1.5 0.0"/>
+		</medium>-->
+	
+	<bsdf type="dielectric" id="glass">
+		<float name="intIOR" value="1.504"/>
+		<float name="extIOR" value="1.0"/>
+		<float name="alpha" value="0.01"/>
+	</bsdf>
+	
+	<shape type="ply">
+		<string name="filename" value="mesh/planar.ply"/>
+		<ref id="metal"/>
+	</shape>
+<!-- 
+	<shape type="ply">
+		<transform name="toWorld">
+			<translate x="0" y="0" z="-1"/>
+		</transform>
+		<string name="filename" value="mesh/planarDown.ply"/>
+		<ref id="glass"/>
+	</shape> 
+
+
+	<shape type="ply">
+		<string name="filename" value="outputMesh0.ply"/>
+
+		<ref id="glass"/>
+	</shape>
+
+	<shape type="ply">
+		<string name="filename" value="outputMesh1.ply"/>
+
+		<ref id="glass"/>
+	</shape>-->
+</scene>

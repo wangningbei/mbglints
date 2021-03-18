@@ -1,0 +1,182 @@
+2021-03-16 11:01:00 INFO  main [mainwindow.cpp:80] Mitsuba version 0.5.0 (Windows, 64 bit), Copyright (c) 2014 Wenzel Jakob
+2021-03-16 11:01:00 INFO  main [mainwindow.cpp:83] Configured for RGB-based rendering
+2021-03-16 11:01:00 DEBUG main [WGLSession] Initializing WGL session
+2021-03-16 11:01:00 DEBUG main [WGLRenderer] Using an existing WGL context
+2021-03-16 11:01:00 DEBUG main [GLRenderer] OpenGL renderer : GeForce RTX 2060/PCIe/SSE2
+2021-03-16 11:01:00 DEBUG main [GLRenderer] OpenGL vendor   : NVIDIA Corporation
+2021-03-16 11:01:00 DEBUG main [GLRenderer] OpenGL version  : 4.6.0 NVIDIA 456.87
+2021-03-16 11:01:00 DEBUG main [GLRenderer] Capabilities: Framebuffers objects are supported.
+2021-03-16 11:01:00 DEBUG main [GLRenderer] Capabilities: GLSL is supported.
+2021-03-16 11:01:00 DEBUG main [GLRenderer] Capabilities: Floating point textures are supported.
+2021-03-16 11:01:00 DEBUG main [GLRenderer] Capabilities: Floating point color buffers are supported.
+2021-03-16 11:01:00 DEBUG main [GLRenderer] Capabilities: Fast buffer blitting is supported.
+2021-03-16 11:01:00 DEBUG main [GLRenderer] Capabilities: Multisample framebuffer objects are supported.
+2021-03-16 11:01:00 DEBUG main [GLRenderer] Capabilities: Vertex buffer objects are supported.
+2021-03-16 11:01:00 DEBUG main [GLRenderer] Capabilities: Geometry shaders are supported.
+2021-03-16 11:01:00 DEBUG main [GLRenderer] Capabilities: Custom texture filtering is supported.
+2021-03-16 11:01:00 DEBUG main [GLRenderer] Capabilities: Synchronization objects are supported.
+2021-03-16 11:01:00 DEBUG main [GLRenderer] Capabilities: Bindless rendering is supported.
+2021-03-16 11:01:00 DEBUG main [Thread] Spawning thread "prvw"
+2021-03-16 11:01:00 DEBUG prvw [WGLDevice] Initializing WGL device
+2021-03-16 11:01:00 DEBUG prvw [WGLRenderer] Initializing WGL renderer
+2021-03-16 11:01:01 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'Accumulation program']
+2021-03-16 11:01:01 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'Directional shadow map generator']
+2021-03-16 11:01:01 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'Paraboloid shadow map generator', maxVertices=4]
+2021-03-16 11:01:01 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'Cube/Hemicube shadow map generator (5/6 pass version)']
+2021-03-16 11:01:01 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'Cube shadow map generator (1 pass version)', maxVertices=18]
+2021-03-16 11:01:01 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'Hemicube shadow map generator (1 pass version)', maxVertices=15]
+2021-03-16 11:01:01 DEBUG main [GLProgram] Uploading a GPU program : GPUProgram[name = 'Tonemapper [Gamma]']
+2021-03-16 11:01:01 DEBUG main [GLProgram] Uploading a GPU program : GPUProgram[name = 'Tonemapper [Reinhard et al. 2002]']
+2021-03-16 11:01:01 DEBUG main [GLProgram] Uploading a GPU program : GPUProgram[name = 'Downsampling program']
+2021-03-16 11:01:01 DEBUG main [GLProgram] Uploading a GPU program : GPUProgram[name = 'Log-luminance program']
+2021-03-16 11:01:02 DEBUG main [Thread] Spawning thread "wrk0"
+2021-03-16 11:01:02 DEBUG main [Thread] Spawning thread "wrk1"
+2021-03-16 11:01:02 DEBUG main [Thread] Spawning thread "wrk2"
+2021-03-16 11:01:02 DEBUG main [Thread] Spawning thread "wrk3"
+2021-03-16 11:01:02 DEBUG main [Thread] Spawning thread "wrk4"
+2021-03-16 11:01:02 DEBUG main [Thread] Spawning thread "wrk5"
+2021-03-16 11:01:02 DEBUG main [Thread] Spawning thread "wrk6"
+2021-03-16 11:01:02 DEBUG main [Thread] Spawning thread "wrk7"
+2021-03-16 11:01:02 DEBUG main [Thread] Spawning thread "wrk8"
+2021-03-16 11:01:02 DEBUG main [Thread] Spawning thread "wrk9"
+2021-03-16 11:01:27 DEBUG main [Thread] Spawning thread "load"
+2021-03-16 11:01:27 INFO  load [sceneloader.cpp:114] Parsing scene description from "C:/research/2020project/mbndf/xml/sceneTest/scene_test_conductor_one.xml" ..
+2021-03-16 11:01:27 INFO  load [PluginManager] Loading plugin "plugins\path.dll" ..
+2021-03-16 11:01:27 INFO  load [PluginManager] Loading plugin "plugins\directional.dll" ..
+2021-03-16 11:01:27 INFO  load [PluginManager] Loading plugin "plugins\ldsampler.dll" ..
+2021-03-16 11:01:28 WARN  load [LowDiscrepancySampler] Sample count should be a power of two -- rounding to 4
+2021-03-16 11:01:28 INFO  load [PluginManager] Loading plugin "plugins\mitchell.dll" ..
+2021-03-16 11:01:28 INFO  load [PluginManager] Loading plugin "plugins\ldrfilm.dll" ..
+2021-03-16 11:01:28 INFO  load [PluginManager] Loading plugin "plugins\perspective.dll" ..
+2021-03-16 11:01:28 INFO  load [PluginManager] Loading plugin "plugins\roughconductorggx.dll" ..
+2021-03-16 11:01:28 INFO  load [spectrum.cpp:601] "cu.eta.spd": loaded a spectral power distribution with 55 entries (between 302.400421 and 885.601257 nm)
+2021-03-16 11:01:28 INFO  load [spectrum.cpp:601] "cu.k.spd": loaded a spectral power distribution with 55 entries (between 302.400421 and 885.601257 nm)
+2021-03-16 11:01:28 INFO  load [PluginManager] Loading plugin "plugins\roughconductor_mb.dll" ..
+2021-03-16 11:01:29 INFO  load [spectrum.cpp:601] "cu.eta.spd": loaded a spectral power distribution with 55 entries (between 302.400421 and 885.601257 nm)
+2021-03-16 11:01:29 INFO  load [spectrum.cpp:601] "cu.k.spd": loaded a spectral power distribution with 55 entries (between 302.400421 and 885.601257 nm)
+2021-03-16 11:01:32 DEBUG load [roughconductor_mb.cpp:2728] The G2_1 of neg wi: is 0.812972
+2021-03-16 11:01:32 DEBUG load [roughconductor_mb.cpp:2728] The G2_2 of neg wi: is 0.812972
+2021-03-16 11:01:32 DEBUG load [roughconductor_mb.cpp:2728] The G2_3 of neg wi: is 0.934629
+2021-03-16 11:01:32 DEBUG load [roughconductor_mb.cpp:2728] The G2_1 of neg wi: is 6.548627
+2021-03-16 11:01:32 DEBUG load [roughconductor_mb.cpp:2728] The G2_2 of neg wi: is 6.548632
+2021-03-16 11:01:32 INFO  load [PluginManager] Loading plugin "plugins\sphere.dll" ..
+2021-03-16 11:01:32 INFO  load [PluginManager] Loading plugin "plugins\bitmap.dll" ..
+2021-03-16 11:01:33 INFO  load [BitmapTexture] Loading texture "floor.png"
+2021-03-16 11:01:33 INFO  load [MIPMap] Mapped MIP map cache file "C:/research/2020project/mbndf/xml/sceneTest\floor.mip" into memory (111.3 MiB).
+2021-03-16 11:01:33 INFO  load [PluginManager] Loading plugin "plugins\diffuse.dll" ..
+2021-03-16 11:01:33 INFO  load [PluginManager] Loading plugin "plugins\twosided.dll" ..
+2021-03-16 11:01:33 INFO  load [PluginManager] Loading plugin "plugins\rectangle.dll" ..
+2021-03-16 11:01:33 INFO  load [KDTreeBase] Constructing a SAH kd-tree (2 primitives) ..
+2021-03-16 11:01:33 DEBUG load [KDTreeBase] Creating a preliminary index list (8 B)
+2021-03-16 11:01:33 DEBUG load [KDTreeBase] Computed scene bounds in 0 ms
+2021-03-16 11:01:33 DEBUG load [KDTreeBase] 
+2021-03-16 11:01:33 DEBUG load [KDTreeBase] kd-tree configuration:
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Traversal cost           : 15.00
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Query cost               : 20.00
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Empty space bonus        : 0.90
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Max. tree depth          : 9
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Scene bounding box (min) : [-4, -0.1, -4]
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Scene bounding box (max) : [4, 0.68, 4]
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Min-max bins             : 128
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    O(n log n) method        : use for <= 65536 primitives
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Perfect splits           : yes
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Retract bad splits       : yes
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Stopping primitive count : 6
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Build tree in parallel   : no
+2021-03-16 11:01:33 DEBUG load [KDTreeBase] 
+2021-03-16 11:01:33 INFO  load [KDTreeBase] Finished -- took 0 ms.
+2021-03-16 11:01:33 DEBUG load [KDTreeBase] 
+2021-03-16 11:01:33 DEBUG load [KDTreeBase] Temporary memory statistics:
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Classification storage : 13 B
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Indirection entries    : 0 (0 B)
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Main thread:
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]       Left events   : 1 chunks (512.0 KiB)
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]       Right events  : 0 chunks (0 B)
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]       kd-tree nodes : 1 entries, 1 blocks (512.0 KiB)
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]       Indices       : 2 entries, 1 blocks (512.0 KiB)
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Total: 1.5 MiB
+2021-03-16 11:01:33 DEBUG load [KDTreeBase] 
+2021-03-16 11:01:33 DEBUG load [KDTreeBase] Optimizing memory layout ..
+2021-03-16 11:01:33 DEBUG load [KDTreeBase] Finished -- took 0 ms.
+2021-03-16 11:01:33 DEBUG load [KDTreeBase] 
+2021-03-16 11:01:33 DEBUG load [KDTreeBase] Structural kd-tree statistics:
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Parallel work units         : 0
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Node storage cost           : 8 B
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Index storage cost          : 8 B
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Inner nodes                 : 0
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Leaf nodes                  : 1
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Nonempty leaf nodes         : 1
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Leaf node histogram         : 0(0) 1(0) 2(1) 3(0) 
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]                                  4(0) 5(0) 6(0) 7(0) 
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]                                  8(0) 9(0) 10(0) 11(0) 
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]                                  12(0) 13(0) 14(0) 15(0) 
+2021-03-16 11:01:33 DEBUG load [KDTreeBase] 
+2021-03-16 11:01:33 DEBUG load [KDTreeBase] Qualitative kd-tree statistics:
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Retracted splits            : 0
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Pruned primitives           : 0
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Largest leaf node           : 2 primitives
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Avg. prims/nonempty leaf    : 2.00
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Expected traversals/query   : 0.00
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Expected leaf visits/query  : 1.00
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Expected prim. visits/query : 2.00
+2021-03-16 11:01:33 DEBUG load [KDTreeBase]    Final cost                  : 40.00
+2021-03-16 11:01:33 DEBUG load [KDTreeBase] 
+2021-03-16 11:01:33 DEBUG load [ShapeKDTree] Precomputing triangle intersection information (96 B)
+2021-03-16 11:01:33 DEBUG load [ShapeKDTree] Finished -- took 0 ms.
+2021-03-16 11:01:33 DEBUG load [ShapeKDTree] 
+2021-03-16 11:01:33 DEBUG load [Thread] Thread "load" has finished
+2021-03-16 11:01:34 INFO  prvw [PluginManager] Loading plugin "plugins\halton.dll" ..
+2021-03-16 11:01:34 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'vpl=DirectionalEmitterShader, bsdf=TwoSidedShader[SmoothDiffuseShader[BitmapTextureShader]], ds']
+2021-03-16 11:01:34 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'vpl=DirectionalEmitterShader, bsdf=RoughConductorShader[ConstantSpectrumTextureShader, ConstantFloatTextureShader, ConstantFloatTextureShader], ds']
+2021-03-16 11:02:11 DEBUG main [GLProgram] Freeing GPU program "vpl=DirectionalEmitterShader, bsdf=RoughConductorShader[ConstantSpectrumTextureShader, ConstantFloatTextureShader, ConstantFloatTextureShader], ds"
+2021-03-16 11:02:11 DEBUG main [GLProgram] Freeing GPU program "vpl=DirectionalEmitterShader, bsdf=TwoSidedShader[SmoothDiffuseShader[BitmapTextureShader]], ds"
+2021-03-16 11:02:11 DEBUG prvw [GLProgram] Freeing GPU program "Directional shadow map generator"
+2021-03-16 11:02:11 DEBUG prvw [GLProgram] Freeing GPU program "Paraboloid shadow map generator"
+2021-03-16 11:02:11 DEBUG prvw [GLProgram] Freeing GPU program "Cube/Hemicube shadow map generator (5/6 pass version)"
+2021-03-16 11:02:11 DEBUG prvw [GLProgram] Freeing GPU program "Cube shadow map generator (1 pass version)"
+2021-03-16 11:02:11 DEBUG prvw [GLProgram] Freeing GPU program "Hemicube shadow map generator (1 pass version)"
+2021-03-16 11:02:11 DEBUG prvw [GLProgram] Freeing GPU program "Accumulation program"
+2021-03-16 11:02:11 DEBUG prvw [WGLRenderer] Shutting down WGL Renderer
+2021-03-16 11:02:11 DEBUG prvw [WGLDevice] Shutting down WGL device
+2021-03-16 11:02:11 DEBUG prvw [Thread] Thread "prvw" has finished
+2021-03-16 11:02:11 DEBUG wrk1 [Thread] Thread "wrk1" has finished
+2021-03-16 11:02:11 DEBUG wrk4 [Thread] Thread "wrk4" has finished
+2021-03-16 11:02:11 DEBUG wrk8 [Thread] Thread "wrk8" has finished
+2021-03-16 11:02:11 DEBUG wrk7 [Thread] Thread "wrk7" has finished
+2021-03-16 11:02:11 DEBUG wrk6 [Thread] Thread "wrk6" has finished
+2021-03-16 11:02:11 DEBUG wrk0 [Thread] Thread "wrk0" has finished
+2021-03-16 11:02:11 DEBUG wrk9 [Thread] Thread "wrk9" has finished
+2021-03-16 11:02:11 DEBUG wrk5 [Thread] Thread "wrk5" has finished
+2021-03-16 11:02:11 DEBUG wrk3 [Thread] Thread "wrk3" has finished
+2021-03-16 11:02:11 DEBUG wrk2 [Thread] Thread "wrk2" has finished
+2021-03-16 11:02:11 DEBUG main [GLProgram] Freeing GPU program "Log-luminance program"
+2021-03-16 11:02:11 DEBUG main [GLProgram] Freeing GPU program "Downsampling program"
+2021-03-16 11:02:11 DEBUG main [GLProgram] Freeing GPU program "Tonemapper [Reinhard et al. 2002]"
+2021-03-16 11:02:11 DEBUG main [GLProgram] Freeing GPU program "Tonemapper [Gamma]"
+2021-03-16 11:02:11 DEBUG main [WGLSession] Shutting down WGL session
+2021-03-16 11:02:11 INFO  main [statistics.cpp:142] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins\bitmap.dll [Bitmap texture]
+    -  plugins\diffuse.dll [Smooth diffuse BRDF]
+    -  plugins\directional.dll [Directional emitter]
+    -  plugins\halton.dll [Halton QMC sampler]
+    -  plugins\ldrfilm.dll [Low dynamic range film]
+    -  plugins\ldsampler.dll [Low discrepancy sampler]
+    -  plugins\mitchell.dll [Mitchell-Netravali filter]
+    -  plugins\path.dll [MI path tracer]
+    -  plugins\perspective.dll [Perspective camera]
+    -  plugins\rectangle.dll [Rectangle intersection primitive]
+    -  plugins\roughconductor_mb.dll [Rough conductor BRDF]
+    -  plugins\roughconductorggx.dll [Rough conductor BRDF]
+    -  plugins\sphere.dll [Sphere intersection primitive]
+    -  plugins\twosided.dll [Two-sided BRDF adapter]
+
+  * Texture system :
+    -  Cumulative MIP map memory allocations : 111.326 MiB
+
+  * VPL renderer :
+    -  Max. # of drawn triangles : 1.484 K
+    -  Max. # of resident shaders : 8
+    -  Pruned VPLs : 0.00 % (0.00 of 73.62 K)
+------------------------------------------------------------

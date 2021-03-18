@@ -1,0 +1,89 @@
+2021-03-18 23:41:53 INFO  main [mtsutil.cpp:232] Mitsuba version 0.5.0 (Windows, 64 bit), Copyright (c) 2014 Wenzel Jakob
+2021-03-18 23:41:53 INFO  main [mtsutil.cpp:366] Loading utility "mbglints" ..
+2021-03-18 23:41:53 INFO  main [PluginManager] Loading plugin "plugins\path.dll" ..
+2021-03-18 23:41:53 INFO  main [PluginManager] Loading plugin "plugins\ldsampler.dll" ..
+2021-03-18 23:41:53 INFO  main [PluginManager] Loading plugin "plugins\tent.dll" ..
+2021-03-18 23:41:53 INFO  main [PluginManager] Loading plugin "plugins\hdrfilm.dll" ..
+2021-03-18 23:41:53 INFO  main [PluginManager] Loading plugin "plugins\perspective.dll" ..
+2021-03-18 23:41:53 INFO  main [PluginManager] Loading plugin "plugins\point.dll" ..
+2021-03-18 23:41:53 INFO  main [PluginManager] Loading plugin "plugins\conductor.dll" ..
+2021-03-18 23:41:53 INFO  main [spectrum.cpp:601] "al.eta.spd": loaded a spectral power distribution with 56 entries (between 298.757050 and 885.601257 nm)
+2021-03-18 23:41:53 INFO  main [spectrum.cpp:601] "al.k.spd": loaded a spectral power distribution with 56 entries (between 298.757050 and 885.601257 nm)
+2021-03-18 23:41:53 WARN  main [scenehandler.cpp:795] In file "C:\research\2020project\multiglintsCode\scene/xml\doubleSlabOursReflect.xml" (near line 57): Unqueried attribute "alpha" in element "bsdf"
+2021-03-18 23:41:53 INFO  main [PluginManager] Loading plugin "plugins\dielectric.dll" ..
+2021-03-18 23:41:53 WARN  main [scenehandler.cpp:795] In file "C:\research\2020project\multiglintsCode\scene/xml\doubleSlabOursReflect.xml" (near line 67): Unqueried attribute "alpha" in element "bsdf"
+2021-03-18 23:41:53 INFO  main [PluginManager] Loading plugin "plugins\ply.dll" ..
+2021-03-18 23:41:53 INFO  main [PLYLoader] Loading geometry from "planar.ply" ..
+2021-03-18 23:41:53 INFO  main [PLYLoader] "planar": Loaded 2 triangles, 4 vertices (152 B in 0 ms).
+INFO  main [KDTreeBase] Constructing a SAH kd-tree (2 primitives) ..
+DEBUG main [KDTreeBase] Creating a preliminary index list (8 B)
+DEBUG main [KDTreeBase] Computed scene bounds in 0 ms
+DEBUG main [KDTreeBase] 
+DEBUG main [KDTreeBase] kd-tree configuration:
+DEBUG main [KDTreeBase]    Traversal cost           : 15.00
+DEBUG main [KDTreeBase]    Query cost               : 20.00
+DEBUG main [KDTreeBase]    Empty space bonus        : 0.90
+DEBUG main [KDTreeBase]    Max. tree depth          : 9
+DEBUG main [KDTreeBase]    Scene bounding box (min) : [-2, -2, 0]
+DEBUG main [KDTreeBase]    Scene bounding box (max) : [2, 2, 0]
+DEBUG main [KDTreeBase]    Min-max bins             : 128
+DEBUG main [KDTreeBase]    O(n log n) method        : use for <= 65536 primitives
+DEBUG main [KDTreeBase]    Perfect splits           : yes
+DEBUG main [KDTreeBase]    Retract bad splits       : yes
+DEBUG main [KDTreeBase]    Stopping primitive count : 6
+DEBUG main [KDTreeBase]    Build tree in parallel   : no
+DEBUG main [KDTreeBase] 
+INFO  main [KDTreeBase] Finished -- took 133 ms.
+DEBUG main [KDTreeBase] 
+DEBUG main [KDTreeBase] Temporary memory statistics:
+DEBUG main [KDTreeBase]    Classification storage : 13 B
+DEBUG main [KDTreeBase]    Indirection entries    : 0 (0 B)
+DEBUG main [KDTreeBase]    Main thread:
+DEBUG main [KDTreeBase]       Left events   : 1 chunks (512.0 KiB)
+DEBUG main [KDTreeBase]       Right events  : 0 chunks (0 B)
+DEBUG main [KDTreeBase]       kd-tree nodes : 1 entries, 1 blocks (512.0 KiB)
+DEBUG main [KDTreeBase]       Indices       : 2 entries, 1 blocks (512.0 KiB)
+DEBUG main [KDTreeBase]    Total: 1.5 MiB
+DEBUG main [KDTreeBase] 
+DEBUG main [KDTreeBase] Optimizing memory layout ..
+DEBUG main [KDTreeBase] Finished -- took 7 ms.
+DEBUG main [KDTreeBase] 
+DEBUG main [KDTreeBase] Structural kd-tree statistics:
+DEBUG main [KDTreeBase]    Parallel work units         : 0
+DEBUG main [KDTreeBase]    Node storage cost           : 8 B
+DEBUG main [KDTreeBase]    Index storage cost          : 8 B
+DEBUG main [KDTreeBase]    Inner nodes                 : 0
+DEBUG main [KDTreeBase]    Leaf nodes                  : 1
+DEBUG main [KDTreeBase]    Nonempty leaf nodes         : 1
+DEBUG main [KDTreeBase]    Leaf node histogram         : 0(0) 1(0) 2(1) 3(0) 
+DEBUG main [KDTreeBase]                                  4(0) 5(0) 6(0) 7(0) 
+DEBUG main [KDTreeBase]                                  8(0) 9(0) 10(0) 11(0) 
+DEBUG main [KDTreeBase]                                  12(0) 13(0) 14(0) 15(0) 
+DEBUG main [KDTreeBase] 
+DEBUG main [KDTreeBase] Qualitative kd-tree statistics:
+DEBUG main [KDTreeBase]    Retracted splits            : 0
+DEBUG main [KDTreeBase]    Pruned primitives           : 0
+DEBUG main [KDTreeBase]    Largest leaf node           : 2 primitives
+DEBUG main [KDTreeBase]    Avg. prims/nonempty leaf    : 2.00
+DEBUG main [KDTreeBase]    Expected traversals/query   : 0.00
+DEBUG main [KDTreeBase]    Expected leaf visits/query  : 1.00
+DEBUG main [KDTreeBase]    Expected prim. visits/query : 2.00
+DEBUG main [KDTreeBase]    Final cost                  : 40.00
+DEBUG main [KDTreeBase] 
+DEBUG main [ShapeKDTree] Precomputing triangle intersection information (96 B)
+DEBUG main [ShapeKDTree] Finished -- took 9 ms.
+DEBUG main [ShapeKDTree] 
+INFO  main [spectrum.cpp:601] "al.eta.spd": loaded a spectral power distribution with 56 entries (between 298.757050 and 885.601257 nm)
+INFO  main [spectrum.cpp:601] "al.k.spd": loaded a spectral power distribution with 56 entries (between 298.757050 and 885.601257 nm)
+DEBUG wrk4 [Thread] Thread "wrk4" has finished
+DEBUG wrk2 [Thread] Thread "wrk2" has finished
+DEBUG wrk9 [Thread] Thread "wrk9" has finished
+DEBUG wrk11[Thread] Thread "wrk11" has finished
+DEBUG wrk10[Thread] Thread "wrk10" has finished
+DEBUG wrk3 [Thread] Thread "wrk3" has finished
+DEBUG wrk1 [Thread] Thread "wrk1" has finished
+DEBUG wrk6 [Thread] Thread "wrk6" has finished
+DEBUG wrk7 [Thread] Thread "wrk7" has finished
+DEBUG wrk5 [Thread] Thread "wrk5" has finished
+DEBUG wrk8 [Thread] Thread "wrk8" has finished
+DEBUG wrk0 [Thread] Thread "wrk0" has finished
